@@ -1,0 +1,139 @@
+/* === GLOBAL RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f1115;
+    color: #dcdcdc;
+  }
+  
+  /* === NAVBAR === */
+  nav {
+    background-color: #12151c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    color: #00c3ff;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-right a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-right a:hover {
+    color: #00c3ff;
+  }
+  
+  /* === PAGE CONTENT === */
+  .page-content {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #191c23;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease;
+  }
+  
+  .page-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #00c3ff;
+    text-align: center;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px;
+  }
+  
+  .page-content h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .page-content p, .page-content ul {
+    font-size: 1.1rem;
+    color: #bbbbbb;
+    margin-top: 10px;
+    line-height: 1.7;
+  }
+  
+  .page-content ul {
+    padding-left: 25px;
+  }
+  
+  .page-content li {
+    margin-bottom: 10px;
+  }
+  
+  .page-content a {
+    color: #00c3ff;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .page-content a:hover {
+    color: #009fcc;
+  }
+  
+  /* === FOOTER === */
+  footer {
+    background-color: #12151c;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  /* === ANIMATIONS === */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .nav-right {
+      margin-top: 10px;
+    }
+    .page-content {
+      padding: 20px;
+      margin: 20px;
+    }
+  }
+  
